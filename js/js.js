@@ -3,6 +3,8 @@
 
 //variable for min video
 var vid = document.getElementById("minVideo"); 
+var lyd = document.getElementById("minLyd"); 
+
 
 //Play/pause knap
 function playPause() { 
@@ -25,18 +27,33 @@ function normal() {
     vid.width = 420; 
 } 
 
+
+
 //timestamps
 function curTimeTic() { 
     vid.currentTime = 80;
+    vid.play()
 } 
+
+function curTimeRoar() { 
+    vid.currentTime = 38;
+    vid.play()
+    lyd.currentPosition = 0;
+    lyd.play();
+} 
+
+
 
 function curTimeGrind() { 
     vid.currentTime = 92;
-} 
+    vid.play()
+    /*vid.muted = true;/** video muted på dette sted */
 
+} 
   
 function curTimeHerdt() { 
     vid.currentTime = 115;
+    vid.play()
 } 
 
 //Loop

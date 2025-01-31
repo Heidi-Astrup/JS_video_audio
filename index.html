@@ -8,27 +8,69 @@
 </head>
 <body>
 
-    <button onclick="playPause()">Play/Pause</button> 
-    <button onclick="stor()">Lav stor</button>
-    <button onclick="lille()">Lav lile</button>
-    <button onclick="normal()">Lav normal</button>
+    <aside>
+        <div>
+            <img class="ikoner" src="img/playpause.webp" alt="ikon play and pause" onclick="playPause()">
+            <p>Play/Pause</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/zoom.png" alt="zoom icon" onclick="stor()">
+            <p>Lav stor</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/minimer.png" alt="minimer ikon" onclick="lille()">
+            <p>Lav lille</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/firkant.png" alt="firkant ikon" onclick="normal()">
+            <p>Lav normal</p>
+        </div>
+    </aside>
     <br><br>
 
     <video id="minVideo" width="400" controls>
         <source src="video/skate.mp4" type="video/mp4">
     </video>
 
-    <br>
-    <button onclick="curTimeTic()" type="button">Se tic tac</button>
-    <br><br>
-    <button onclick="curTimeGrind()" type="button">Se grind</button>
-    <br><br>
-    <button onclick="curTimeHerdt()" type="button">Se "hold kæft det er hårdt"</button>
+    <audio id="minLyd" controls>
+        <source src="lyd/leopard-attack-193175.mp3" type="audio/mp3">
+    </audio>
+
+    <br><br><br>
+    <aside>
+        <div>
+            <img class="ikoner" src="img/tictac.png" alt="" onclick="curTimeTic()">
+            <p>Se tic tac metoden</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/tictac.png" alt="" onclick="curTimeRoar()">
+            <p>Se dino'en</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/rail.png" alt="loop ikon" onclick="curTimeGrind()">
+            <p>Se rail-trick</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/hard.png" alt="ikon har det hårdt" onclick="curTimeHerdt()">
+            <p>Se "hold kæft det er hårdt"</p>
+        </div>
+    </aside>
 
     <br><br>
-    <img src="img/loop.webp" alt="loop ikon" onclick="enableLoop()"> <p>Lad video loop</p>
-    <img src="" alt="" onclick="disableLoop()"> <p>stop video loop</p>
-    <img src="" alt="" onclick="checkLoop()"> <p>Tjek loop status</p>
+    <aside>
+        <div>
+            <img class="ikoner" src="img/loop.webp" alt="loop ikon" onclick="enableLoop()"> 
+            <p>Lad video loop</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/stop.png" alt="stop loop ikon" onclick="disableLoop()"> 
+            <p>stop video loop</p>
+        </div>
+        <div>
+            <img class="ikoner" src="img/tjek.png" alt="tjek ikon" onclick="checkLoop()"> 
+            <p>Tjek loop status</p>
+        </div>
+    </aside>
     
 
     <script src="js/js.js"></script>
